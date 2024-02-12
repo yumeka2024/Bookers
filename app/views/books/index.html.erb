@@ -5,8 +5,9 @@
 
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Body</th>
+      <th class="t-title">Title</th>
+      <th class="t-body">Body</th>
+      <th class="t-blank" colspan="3"></th>
     </tr>
   </thead>
 
@@ -36,22 +37,24 @@
 <h2>New book</h2>
 
 <% if @book.errors.any? %>
-  <%= @book.errors.count %> errors prohibited this book from being saved:
-  <ul>
+<div class="error-box">
+  <h2 class="error-title"><%= @book.errors.count %> errors prohibited this book from being saved:</h2>
+  <ul class="error-lists">
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
   </ul>
+</div>
 <% end %>
 
 <%= form_with model: @book do |f| %>
 
-  <p>Title</p>
-  <%= f.text_field :title %>
+  <p class="form-label">Title</p>
+  <div class="form"><%= f.text_field :title %></div>
 
-  <p>Body</p>
-  <%= f.text_area :body %>
+  <p class="form-label">Body</p>
+  <div class="form"><%= f.text_area :body %></div>
 
-  <%= f.submit 'Create Book' %>
+  <div class="form"><%= f.submit 'Create Book' %></div>
 
 <% end %>

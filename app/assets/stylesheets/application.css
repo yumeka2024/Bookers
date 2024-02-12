@@ -17,9 +17,108 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #333333;
 }
 
+/*全体*/
 body {
-  font-family:sans-serif;
+  text-transform: none;
+  font-family: sans-serif;
+  color: #333;
+  margin: 33px;
+}
+
+.flash-message {
+  margin: 33px;
+  color: #008000;
+}
+
+h1 {
+  margin: 18px 0px;
+  font-size: 26px;
+}
+
+h2 {
+  margin: 18px 0px;
+  font-size: 19.5px;
+}
+
+p {
+  margin: 33px;
+  font-size: 13px;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #FFF;
+  background-color: #333;
+}
+
+/*table*/
+table {
+  max-width: 750px;
+  font-size: 13px;
+}
+
+thead {
+  text-align: center;
+}
+
+th {
+  padding: 5px;
+}
+
+.t-title {
+  width: 200px;
+}
+
+.t-body {
+  width: 400px;
+}
+
+.t-blank {
+  width: 150px;
+}
+
+td {
+  padding: 5px;
+}
+
+/*form*/
+.form-label {
+  margin: 0px;
+}
+
+ .form {
+   margin-bottom: 10px;
+ }
+
+ /*link*/
+ .link {
+   margin: 0px;
+ }
+
+/*error*/
+ul {
+  margin: 33px;
+  padding-left: 40px;
+}
+
+.error-box {
+  width: 450px;
+  margin-bottom: 20px;
+  padding: 7px;
+  border: 2px solid red;
+  background-color: #F0F0F0;
+  font-size: 12px;
+}
+
+.error-title {
+  margin: -7px -7px 0px;
+  padding: 5px 5px 5px 15px;
+  color: #FFF;
+  background-color: #C00;
+  font-size: 12px;
 }
